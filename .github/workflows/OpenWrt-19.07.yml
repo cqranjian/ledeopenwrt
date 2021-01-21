@@ -64,13 +64,7 @@ jobs:
        # git clone https://github.com/jerrykuku/lua-maxminddb.git
        # git clone https://github.com/lisaac/luci-app-dockerman.git
        # git clone https://github.com/lisaac/luci-lib-docker.git
-       git clone https://github.com/tianiue/luci-app-oscam.git
-       git clone https://github.com/tianiue/openwrt_oscam.git
-       git clone https://github.com/tianiue/luci-app-pptp-vpnserver.git
-       git clone https://github.com/tianiue/luci-theme-argon-leanimg.git
-       # git clone https://github.com/tianiue/luci-theme-infinityfreedom.git
-       git clone https://github.com/cqranjian/luci-app-feixunchapai.git
-       git clone https://github.com/cqranjian/luci-app-kod.git
+       git clone https://github.com/cqranjian/openwrtplugins.git
     - name: 下载插件
       run: ./scripts/feeds update -a
 
