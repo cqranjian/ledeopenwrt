@@ -480,7 +480,7 @@ jobs:
       id: compile
       run: |
         echo -e "$(nproc) thread compile"
-        curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译openwrt19.07内核固件&desp=${{ env.DEVICE_NAME }}
+        curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=开始编译openwrt19.07内核固件&desp=${{ env.DEVICE_NAME }}请耐心等待。。。。
         make -j$(nproc) || make -j1 || make -j1 V=s
         echo "::set-output name=status::success"
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
