@@ -53,6 +53,7 @@ jobs:
        cd package
        mkdir openwrt-packages
        cd openwrt-packages
+       git clone https://github.com/cqranjian/openwrtplugins.git
        git clone https://github.com/xiaorouji/openwrt-passwall.git
        git clone https://github.com/kenzok8/openwrt-packages.git
        git clone https://github.com/kenzok8/small.git
@@ -62,9 +63,9 @@ jobs:
        # git clone https://github.com/cnzd/luci-app-koolproxyR.git
        # git clone https://github.com/jerrykuku/luci-app-vssr.git
        # git clone https://github.com/jerrykuku/lua-maxminddb.git
-       # git clone https://github.com/lisaac/luci-app-dockerman.git
-       # git clone https://github.com/lisaac/luci-lib-docker.git
-       git clone https://github.com/cqranjian/openwrtplugins.git
+       git clone https://github.com/lisaac/luci-app-dockerman.git
+       git clone https://github.com/lisaac/luci-lib-docker.git
+       
     - name: 下载插件
       run: ./scripts/feeds update -a
 
@@ -413,7 +414,8 @@ jobs:
           # CONFIG_PACKAGE_luci-app-uhttpd=y
           CONFIG_PACKAGE_luci-app-nps=y
           # CONFIG_PACKAGE_luci-app-docker=y
-          # CONFIG_PACKAGE_luci-lib-docker=y
+          CONFIG_PACKAGE_luci-app-dockerman=y
+          CONFIG_PACKAGE_luci-lib-docker=y
           CONFIG_PACKAGE_luci-app-mwan3helper=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
