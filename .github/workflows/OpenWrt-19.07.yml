@@ -414,8 +414,8 @@ jobs:
           # CONFIG_PACKAGE_luci-app-uhttpd=y
           CONFIG_PACKAGE_luci-app-nps=y
           # CONFIG_PACKAGE_luci-app-docker=y
-          CONFIG_PACKAGE_luci-app-dockerman=y
-          CONFIG_PACKAGE_luci-lib-docker=y
+          # CONFIG_PACKAGE_luci-app-dockerman=y
+          # CONFIG_PACKAGE_luci-lib-docker=y
           CONFIG_PACKAGE_luci-app-mwan3helper=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
