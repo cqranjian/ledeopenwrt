@@ -63,8 +63,8 @@ jobs:
        # git clone https://github.com/cnzd/luci-app-koolproxyR.git
        # git clone https://github.com/jerrykuku/luci-app-vssr.git
        # git clone https://github.com/jerrykuku/lua-maxminddb.git
-       git clone https://github.com/lisaac/luci-app-dockerman.git
-       git clone https://github.com/lisaac/luci-lib-docker.git
+       # git clone https://github.com/lisaac/luci-app-dockerman.git
+       # git clone https://github.com/lisaac/luci-lib-docker.git
        
     - name: 下载插件
       run: ./scripts/feeds update -a
