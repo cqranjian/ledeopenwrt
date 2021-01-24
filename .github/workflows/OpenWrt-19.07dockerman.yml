@@ -65,6 +65,7 @@ jobs:
        # git clone https://github.com/jerrykuku/lua-maxminddb.git
        git clone https://github.com/lisaac/luci-app-dockerman.git
        git clone https://github.com/lisaac/luci-lib-docker.git
+       git clone https://github.com/riverscn/openwrt-iptvhelper.git
        
     - name: 下载插件
       run: ./scripts/feeds update -a
@@ -434,6 +435,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-feixunchapai=y
+          CONFIG_PACKAGE_luci-app-iptvhelper=y
+          CONFIG_PACKAGE_iptvhelper=y
           EOF
 
           # LuCI主题:
