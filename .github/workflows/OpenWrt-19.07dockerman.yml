@@ -53,18 +53,20 @@ jobs:
        cd package
        mkdir openwrt-packages
        cd openwrt-packages
-       git clone https://github.com/cqranjian/openwrtplugins.git
        git clone https://github.com/xiaorouji/openwrt-passwall.git
        git clone https://github.com/kenzok8/openwrt-packages.git
        git clone https://github.com/kenzok8/small.git
        git clone https://github.com/destan19/OpenAppFilter.git
        git clone https://github.com/vernesong/OpenClash.git
        git clone https://github.com/schen39/luci-app-serverchan.git
+       git clone https://github.com/cqranjian/luci-app-kod.git
+       git clone https://github.com/cqranjian/luci-app-pptp-vpnserver.git
        # git clone https://github.com/cnzd/luci-app-koolproxyR.git
        # git clone https://github.com/jerrykuku/luci-app-vssr.git
        # git clone https://github.com/jerrykuku/lua-maxminddb.git
        git clone https://github.com/lisaac/luci-app-dockerman.git
        git clone https://github.com/lisaac/luci-lib-docker.git
+       git clone https://github.com/cqranjian/openwrtplugins.git
        git clone https://github.com/riverscn/openwrt-iptvhelper.git
        
     - name: 下载插件
@@ -434,7 +436,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-oaf=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
-          CONFIG_PACKAGE_luci-app-feixunchapai=y
+          CONFIG_PACKAGE_luci-app-dc1=y
+          CONFIG_PACKAGE_feixun=y
           CONFIG_PACKAGE_luci-app-iptvhelper=y
           CONFIG_PACKAGE_iptvhelper=y
           EOF
